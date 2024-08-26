@@ -1,5 +1,12 @@
 
-c### Hardware
+### Pins
+Servo PIN: 4
+Motor forward PIN: 8
+Motor backward PIN: 10
+Motor PWM PIN: 11
+
+
+### Hardware
 - HX-2S-D2O
 - Arduino Nano
 - ESP8266
