@@ -19,6 +19,7 @@ ESP TX PIN: 3
 ### Measured battery values 
 19.08.2024: 6,43V
 26.08.2024: 6,43V #1 2,967V #2 3,452V
+26.08.2024: 7,28V #1 3,624V #2 3,642V
 
 ### Aufladen-Log
 26.08.2024 19:33 - 8,0V 0,5A
@@ -27,6 +28,7 @@ ESP TX PIN: 3
 26.08.2024 19:49 - 8,1V 0,4A
 26.08.2024 19:52 - 8,1V 0,4A
 26.08.2024 20:13 - 8,1V 0,3A
+26.08.2024 20:34 - 8,2V 0,4A
 
 
 ## About power supply (HX-2S-D2O)
@@ -65,6 +67,12 @@ Licensed under either of
    ([LICENSE-MIT](LICENSE-MIT) or <http://opensource.org/licenses/MIT>)
 
 at your option.
+
+## Known issues
+1. If you get `Error: programmer is not responding` error, try to change `.cargo/config.toml`:
+   - Ensure you are using correct USB port: e.g. `-P /dev/cu.usbserial-1410`
+   - You can try `nano` instead of `nano-new`
+   - You can try to use another baud rate `115200` instead of `57600`
 
 ## Contribution
 Unless you explicitly state otherwise, any contribution intentionally submitted
