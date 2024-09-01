@@ -16,6 +16,11 @@ ESP TX PIN: 3
 - SG90
 - x2 18650 batteries
 
+### ESP07 connection
+
+
+
+
 ### Measured battery values 
 19.08.2024: 6,43V
 26.08.2024: 6,43V #1 2,967V #2 3,452V
@@ -41,6 +46,8 @@ Tiefentladung Spannung: 2,5V - 3,0V ± 0,05V
 
 ### Software for circuit modelling
 - https://falstad.com/circuit/
+- Arduino simulator
+   - https://wokwi.com/arduino
 
 
 ## Build Instructions
