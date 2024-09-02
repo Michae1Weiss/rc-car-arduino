@@ -2,6 +2,7 @@
 #![no_main]
 
 use arduino_hal::prelude::*;
+use nb;
 
 #[panic_handler]
 fn panic(info: &core::panic::PanicInfo) -> ! {
@@ -49,8 +50,13 @@ fn main() -> ! {
     let mut led = pins.d13.into_output();
 
     loop {
-        led.toggle();
-        arduino_hal::delay_ms(3000);
-        unimplemented!();
+        // Read a byte from the serial connection 
+        let b = nb::block!(serial.read()).unwrap(); 
+  
+        // Answer 
+        ufmt::uwriteln!(&mut serial, "Got {}!\r", b).unwrap(); 
+
+        // led.toggle();
+        // arduino_hal::delay_ms(100);
     }
 }
