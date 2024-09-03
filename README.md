@@ -49,6 +49,11 @@ Tiefentladung Spannung: 2,5V - 3,0V ± 0,05V
 - Arduino simulator
    - https://wokwi.com/arduino
 
+### Sources
+- Article about a watchdog timer
+   - https://arduinodiy.wordpress.com/2015/06/22/flashing-an-led-with-attiny13/
+- 
+
 
 ## Build Instructions
 1. Install prerequisites as described in the [`avr-hal` README] (`avr-gcc`, `avr-libc`, `avrdude`, [`ravedude`]).
