@@ -1,3 +1,4 @@
+<img width="1280" height="960" alt="rc-car-arduino" src="https://github.com/user-attachments/assets/654edc3a-2a30-4ee1-b4d5-c947bf8b0b89" />
 
 ### Pins
 Servo PIN: 4
